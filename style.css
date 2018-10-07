@@ -1,6 +1,4 @@
 body {
-  position: relative;
-  top: 49px;
   margin: auto;
   max-width: 1024px;
   font-family: sans-serif;
@@ -8,11 +6,21 @@ body {
   color: #dddddd;
 }
 
-div {
+div.body {
+  position: relative;
+  top: 47px;
+}
+
+div.body div {
+  display: block;
   margin: 10px;
   padding: 10px;
   background-color: #353535;
-  border-radius: 5px;
+  border-top: 50px solid transparent;
+  margin-top: -50px;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
 }
 
 .navigation {
@@ -22,7 +30,6 @@ div {
   z-index: 1;
   margin: 0;
   padding: 0;
-
 }
 
 .navigation ul {
@@ -30,6 +37,8 @@ div {
   margin: 0;
   padding: 0;
   overflow: hidden;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
   width: 1024px;
   background-color: #353535;
 }
@@ -84,4 +93,12 @@ div {
 #code-examples a:hover {
   background-color: #5a5a5a;
   color: #000000;
+}
+
+footer {
+  margin-top: 60px;
+  height: 150px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-image: url("https://media1.tenor.com/images/2802f58da8fe7ef8ef1126f2f9801d2f/tenor.gif?itemid=8654420")
 }
